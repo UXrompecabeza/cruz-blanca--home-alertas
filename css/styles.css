@@ -834,12 +834,19 @@ main .header {
 .home .banner-btn_box .banner-big_box .banner-item img {
     width: 100%
 }
+
+
+
+.auto-carousel .slick-prev, .slick-next{
+    height: 40px !important;
+    width: 40px !important;
+  }
 .auto-carousel .slick-prev{
     left: -20px;
 top: 26px;
 }
 .auto-carousel .slick-next{
-    right: -20px;
+    right: -30px;
 
     top: 26px;
 }
@@ -848,7 +855,7 @@ top: 26px;
     color: #424242;
     font-size: 25px;
     font-weight: bold;
-    padding: 15px 9px 20px 7px;
+    padding: 13px 22px 22px 8px;
     border-radius: 5px 0px 0px 5px;
     background-color: rgba(104, 173, 219, 0.2)
   }
@@ -857,17 +864,26 @@ top: 26px;
     color: #424242;
     font-size: 25px;
     font-weight: bold;
-    padding: 15px 9px 20px 4px;
+    padding: 13px 8px 22px 4px;
     border-radius: 0px 5px 5px 0px;
     background-color: rgba(104, 173, 219, 0.2)
   }
 
+
+
+  .slick-prev, .slick-next{
+    height: 40px !important;
+    width: 40px !important;
+  }
+
+
+
   .slick-prev{
-    left: -36px;
+    left: -42px;
 
 }
 .slick-next{
-    right: -27px;
+    right: -42px;
 
 }
   .slick-prev::before {
