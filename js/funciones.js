@@ -3,15 +3,16 @@ $(".auto-carousel").slick({
         dots: !0,
         infinite: !0,
         slidesToScroll: 1,
-        arrows: !1,
+        arrows: !0,
         autoplay: !0,
         autoplaySpeed: 5e3
+        
     }),
     $(".banner-carousel").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: !0,
-        arrows: !1
+        arrows: !0
     }),
     $(".btn-carousel").slick({
         slidesToShow: 4,
@@ -27,3 +28,4 @@ $(".auto-carousel").slick({
         arrows: !1,
         responsive: [{ breakpoint: 767, settings: { dots: !0 } }]
     });
+   

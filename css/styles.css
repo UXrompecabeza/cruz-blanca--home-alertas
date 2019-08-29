@@ -527,11 +527,12 @@ main .header {
 }
 
 .home .alertas-carrusel .alerta-box {
-    border-radius: 4px;
+    border-radius: 0px;
     padding: 1em 3em;
     display: flex !important;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    height: 62px;
 }
 
 .home .alertas-carrusel .alerta-box.green {
@@ -833,6 +834,61 @@ main .header {
 .home .banner-btn_box .banner-big_box .banner-item img {
     width: 100%
 }
+.auto-carousel .slick-prev{
+    left: -20px;
+top: 26px;
+}
+.auto-carousel .slick-next{
+    right: -20px;
+
+    top: 26px;
+}
+.auto-carousel .slick-prev::before {
+    content:  url(../assets/icon-arrow-prev.svg);
+    color: #424242;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 15px 9px 20px 7px;
+    border-radius: 5px 0px 0px 5px;
+    background-color: rgba(104, 173, 219, 0.2)
+  }
+  .auto-carousel  .slick-next::before {
+    content:  url(../assets/icon-arrow.svg);
+    color: #424242;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 15px 9px 20px 4px;
+    border-radius: 0px 5px 5px 0px;
+    background-color: rgba(104, 173, 219, 0.2)
+  }
+
+  .slick-prev{
+    left: -36px;
+
+}
+.slick-next{
+    right: -27px;
+
+}
+  .slick-prev::before {
+    content:  url(../assets/icon-arrow-prev.svg);
+    color: #424242;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0px 11px 2px 10px;
+    border-radius: 50%;
+    background-color: rgba(104, 173, 219, 0.2)
+  }
+
+  .slick-next::before {
+    content:  url(../assets/icon-arrow.svg);
+    color: #424242;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0px 10px 2px 11px;
+    border-radius: 50%;
+    background-color: rgba(104, 173, 219, 0.2)
+}
 
 @media (max-width: 768px) {
     .hide-sm {
@@ -846,9 +902,12 @@ main .header {
         font-size: 14px;
         margin-bottom: 15px
     }
+    
     main .home .alertas-carrusel .alerta-box {
         padding: 1em;
-        border-radius: 0
+        border-radius: 0;
+       
+       
     }
     main .home .alertas-carrusel .alerta-box img {
         min-width: 20px
