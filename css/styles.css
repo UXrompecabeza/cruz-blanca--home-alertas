@@ -1051,6 +1051,33 @@ top: 26px;
         border-top: 6px solid #0079C7;
         padding: 1em
     }
+
+  .carousel-mobile-1{
+    position: relative;
+    top: -19rem;
+  }
+  .carousel-mobile-2{
+    position: relative;
+top: 20rem;
+  }
+  .slick-prev, .slick-next{
+      display: none;
+  }
+  body{
+    overflow-x: hidden;
+  }
+
+
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .carousel-mobile-1{
+        position: relative;
+        top: -28rem;
+      }
+      .carousel-mobile-2{
+        position: relative;
+    top: 35rem;
+      }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -1065,6 +1092,7 @@ top: 26px;
     .home .banner-btn_box .btn-sm_box .btn-sm h4 {
         font-size: 14px
     }
+    
 }
 
 @media (min-width: 1025px) {
@@ -1072,4 +1100,15 @@ top: 26px;
         visibility: hidden;
         display: none !important
     }
+    .carousel-mobile-1{
+        position: unset;
+       
+      }
+      .carousel-mobile-2{
+        position: unset;
+   
+      }
+      body{
+        overflow-x: hidden;
+      }
 }
